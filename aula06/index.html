@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex;flex-direction: row; ">
+        <div >
+            <h3 id="pontP1">0</h3>
+            <button  id="pegP1" onclick="grabCard()">Pegar Carta</button>
+        </div>
+        <div>
+            <h3 id="pontP2">0</h3>
+            <button  id="pegP2" onclick="grabCard()" disabled>Pegar Carta</button>
+        </div>
+    </div>
+    <div style="display: flex;flex-direction: column;">
+        <button  id="pass" onclick="passTurn()">Passar Vez</button>
+        <button  id="newGame" onclick="newGame()">Novo Jogo</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
