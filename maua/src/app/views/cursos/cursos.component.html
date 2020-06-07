@@ -1,0 +1,8 @@
+<h2>
+  Cursos
+</h2>
+<ul class="cursos list-group list-group-flush">
+  <li *ngFor="let curso of cursos" class="list-group-item">
+    <span class="badge">{{ curso.id }}</span> {{ curso.name }}
+  </li>
+</ul>
