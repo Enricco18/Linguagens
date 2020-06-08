@@ -1,0 +1,20 @@
+<form #form="ngForm" (ngSubmit)="onSubmit(form)" class="form form-register">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">ID</li>
+    <li class="list-group-item">
+      <input name="id" id="id" type="text" placeholder="id" ngModel required />
+    </li>
+    <li class="list-group-item">Nome</li>
+    <li class="list-group-item">
+      <input
+        name="name"
+        id="name"
+        type="text"
+        placeholder="Nome"
+        ngModel
+        required
+      />
+    </li>
+    <li class="list-group-item"><input type="submit" value="Register" /></li>
+  </ul>
+</form>

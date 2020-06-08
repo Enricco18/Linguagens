@@ -11,4 +11,8 @@ export class CursosComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  updateList(curso) {
+    this.cursos.push(curso);
+  }
 }
