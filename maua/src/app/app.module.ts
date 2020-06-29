@@ -7,6 +7,8 @@ import { HomeComponent } from './views/home/home.component';
 import { CursosComponent } from './views/cursos/cursos.component';
 import { ProfessoresComponent } from './views/professores/professores.component';
 import { AddCursosComponent } from './views/add-cursos/add-cursos.component';
+import { StudentsComponent } from './views/students/students.component';
+import { AddStudentsComponent } from './views/add-students/add-students.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { AddCursosComponent } from './views/add-cursos/add-cursos.component';
     CursosComponent,
     ProfessoresComponent,
     AddCursosComponent,
+    StudentsComponent,
+    AddStudentsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

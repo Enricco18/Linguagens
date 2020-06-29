@@ -17,5 +17,6 @@ export class AddCursosComponent implements OnInit {
   onSubmit(f: NgForm) {
     this.curso.push(f.value);
     this.saveCurso.emit(f.value);
+    f.reset();
   }
 }

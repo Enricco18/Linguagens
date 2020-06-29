@@ -1,0 +1,46 @@
+<form #form="ngForm" (ngSubmit)="onSubmit(form)" class="form form-register">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Curso</li>
+    <li class="list-group-item">
+      <select name="course" id="course" ngModel required>
+        <option *ngFor="let curso of cursos" value="{{ curso.id }}">
+          {{ curso.name }}
+        </option>
+      </select>
+    </li>
+    <li class="list-group-item">Nome</li>
+    <li class="list-group-item">
+      <input
+        name="name"
+        id="name"
+        type="text"
+        placeholder="Nome"
+        ngModel
+        required
+      />
+    </li>
+    <li class="list-group-item">Idade</li>
+    <li class="list-group-item">
+      <input
+        name="age"
+        id="age"
+        type="text"
+        placeholder="Idade"
+        ngModel
+        required
+      />
+    </li>
+    <li class="list-group-item">Email</li>
+    <li class="list-group-item">
+      <input
+        name="email"
+        id="email"
+        type="text"
+        placeholder="Email"
+        ngModel
+        required
+      />
+    </li>
+    <li class="list-group-item"><input type="submit" value="Register" /></li>
+  </ul>
+</form>

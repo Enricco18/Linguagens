@@ -1,0 +1,25 @@
+<app-add-students
+  [students]="students"
+  (saveCurso)="(updateList)"
+></app-add-students>
+<h2 ng-class="{ bold: deleted }">
+  Alunos
+</h2>
+<div [ngStyle]="getGridOptions()">
+  <div
+    *ngFor="let student of students; let i = index"
+    [ngStyle]="{ display: 'inline-grid' }"
+    [ngClass]="{ blue: i % 2 == 0, card: true }"
+  >
+    <div class="card-body">
+      <h5 class="card-title">{{ student.name }}</h5>
+      <p class="card-title">{{ student.age }}</p>
+      <p class="card-title">
+        {{ student.email }}
+      </p>
+      <p>
+        <span class="badge">{{ student.course }}</span>
+      </p>
+    </div>
+  </div>
+</div>
